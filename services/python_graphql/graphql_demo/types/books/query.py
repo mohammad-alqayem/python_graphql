@@ -14,14 +14,14 @@ class BooksQuery:
         return query.all()
 
     def resolve_books_by_name(self, info, **kwargs):
-        q = kwargs.get('name')
+        book_name = kwargs.get('name')
         books_query = BooksType.get_query(info)
 
-        return books_query.filter(Books.name.contains(q)).all()
+        return books_query.filter(Books.name.contains(book_name)).all()
 
     def resolve_books_by_genre(self, info, **kwargs):
-        q = kwargs.get('name')
+        genre_name = kwargs.get('name')
 
         books_query = BooksType.get_query(info)
 
-        return books_query.join(Genres).filter(Genres.name == q).all()
+        return books_query.join(Genres).filter(Genres.name == genre_name).all()
