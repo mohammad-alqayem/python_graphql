@@ -1,4 +1,4 @@
-# python GraphQL demo project
+# Python GraphQL demo project
 This project implements Python (Flask) with GraphQL Server implementing SQLAlchemy, graphene, and PostgreSQL
 
 ### Local Project Setup
