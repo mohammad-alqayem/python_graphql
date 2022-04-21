@@ -2,13 +2,19 @@
 This project implements Python (Flask) with GraphQL Server implementing SQLAlchemy, graphene, and PostgreSQL
 
 ### Local Project Setup
+#### Python version: 3.9
 1. Run PostgreSQL using docker
 
 ```shell
 docker run --name postgresql -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=password -p 5432:5432 -d postgres
 ```
 
-2. Setup env variables 
+2. Install requirements
+```shell
+pip install -r services/python_graphql/requirements.txt
+```
+
+3. Setup env variables 
 
 ```shell
 export db_name=demo
