@@ -23,8 +23,8 @@ export POSTGRES_PASSWORD=password
 export db_ip_address=127.0.0.1
 ```
 
-3. Run main.py
-4. Go to http://127.0.0.1:5000/graphql_demo in your browser
+4. Run main.py
+5. Go to http://127.0.0.1:5000/graphql_demo in your browser
 
 ### GraphQL queries examples
 
